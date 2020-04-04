@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eae man</title>
+</head>
+<body>
+
+    <div id="app">
+       <button id="botao">clica ae</button>
+    </div>
+
+    <script>
+        var btnElement = document.querySelector('button#botao');
+        var number = 0;
+        
+        var container = document.querySelector('div#app');
+
+        
+
+        
+        btnElement.onclick = function(){
+            number++;
+
+            var counter = document.createTextNode(number);
+            container.appendChild(counter);
+        }
+
+
+
+    </script>
+</body>
+</html>

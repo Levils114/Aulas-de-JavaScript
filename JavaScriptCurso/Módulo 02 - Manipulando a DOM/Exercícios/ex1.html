@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+</head>
+<body>
+
+    <div id="app">
+        
+    </div>
+
+    <script>
+        var container = document.querySelector('div#app');
+        var button  = document.createElement('button');
+        var textButton = document.createTextNode('clica ae');
+
+    
+        container.appendChild(button);
+        button.appendChild(textButton);
+
+        button.onclick = function(){
+            var box = document.createElement('div');
+            container.appendChild(box);
+
+            box.style.width='100px';
+            box.style.height='100px';
+            box.style.backgroundColor='#f00';
+
+            
+        }
+        
+        
+
+    </script>
+</body>
+</html>

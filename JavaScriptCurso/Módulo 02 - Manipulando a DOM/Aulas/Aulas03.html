@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 03</title>
+</head>
+<body>
+
+    <div id="app">
+       
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        var textElement = document.createTextNode("vídeo legal hehe");
+        var divElement = document.querySelector('div#app');
+
+        linkElement.setAttribute('href', 'https://www.youtube.com/watch?v=rJzYCVUGC4k&t=170s');
+        linkElement.appendChild(textElement);
+
+        divElement.appendChild(linkElement);
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

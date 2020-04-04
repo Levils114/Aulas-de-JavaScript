@@ -7,14 +7,23 @@
 <body>
 
     <div id="app">
-        <input placeholder="eae man, digita ae tua conta bancária" onkeypress="mostrarAlert()"/>
-        <button onclick="mostrarAlert()">eae man</button>
+        <input type="text" name="nome"/>
+        <button class="botao">eae man</button>
     </div>
 
     <script>
-        function mostrarAlert(){
-            alert('eae man, blz?');
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+
+            alert(text);
         }
+        
+        
+
     </script>
 </body>
 </html>
