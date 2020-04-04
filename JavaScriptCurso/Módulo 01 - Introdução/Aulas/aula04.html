@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 04</title>
+</head>
+<body>
+
+
+
+    <script>
+       function retornaSexo(sexo){ //definição de uma função, eu crio o nome dele, e os parâmetros (que pode-se dizer que são variáveis) dentro dos parenteses
+         
+         if (sexo === "M"){
+             return 'Masculino';
+         } else if (sexo === "F"){
+            return 'Feminino';
+         } else{
+            return "Digite M ou F";
+         };
+
+       };
+
+       var resultado = retornaSexo('M');//observe que eu criei duas variáveis 'resultado', uma dentro da função soma, e outra fora, isso acontece, pq oq é definido dentro da função, é tipo las vegas, fica por lá msm kkk
+       console.log(resultado);
+    </script>
+</body>
+</html>
