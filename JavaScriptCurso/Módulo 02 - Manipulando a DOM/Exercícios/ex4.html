@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 04</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        var list = document.querySelector('ul#list');
+        var input = document.querySelector('input[name=nome]');
+        var li0 = document.createElement('li');
+        var li1 = document.createElement('li');
+        var li2 = document.createElement('li');
+
+
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var nome0 = document.createTextNode(nomes[0]);
+        var nome1 = document.createTextNode(nomes[1]);
+        var nome2 = document.createTextNode(nomes[2]);
+
+        list.appendChild(li0);
+        list.appendChild(li1);
+        list.appendChild(li2);
+
+        li0.appendChild(nome0);
+        li1.appendChild(nome1);
+        li2.appendChild(nome2);
+
+        function adicionar(){
+            var li = document.createElement('li');
+            var nomes1 = [input.value];
+            var nome = document.createTextNode(nomes1);
+
+            li.appendChild(nome);
+            list.appendChild(li);
+
+            input.value = '';
+
+        }
+
+
+    </script>
+</body>
+</html>
